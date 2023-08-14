@@ -41,14 +41,14 @@ public final class MyBlockEntityTypes {
     public static final BlockEntityType<BambooSteamerBlockEntity> BAMBOO_STEAMER = Registries.of(BambooSteamerBlockEntity::new, MyBlocks.BAMBOO_STEAMER);
     public static final BlockEntityType<SmartDrainBlockEntity> SMART_DRAIN = Registries.of(SmartDrainBlockEntity::new, MyBlocks.SMART_DRAIN);
     public static final BlockEntityType<CopperTunnelBlockEntity> COPPER_TUNNEL = Registries.of(CopperTunnelBlockEntity::new, MyBlocks.COPPER_TUNNEL);
-    public static final BlockEntityType<MultifuncBasinBlockEntity> MULTIFUNC_BASIN = Registries.of(MultifuncBasinBlockEntity::new, MyBlocks.MULTIFUNC_BASIN);
+//    public static final BlockEntityType<MultifuncBasinBlockEntity> MULTIFUNC_BASIN = Registries.of(MultifuncBasinBlockEntity::new, MyBlocks.MULTIFUNC_BASIN);
     public static final BlockEntityType<VerticalCutterBlockEntity> VERTICAL_CUTTER = Registries.of(VerticalCutterBlockEntity::new, MyBlocks.VERTICAL_CUTTER);
     public static final BlockEntityType<PressureCookerBlockEntity> PRESSURE_COOKER = Registries.of(PressureCookerBlockEntity::new, MyBlocks.PRESSURE_COOKER);
     public static final BlockEntityType<MincerBlockEntity> MINCER = Registries.of(MincerBlockEntity::new, MyBlocks.MINCER);
     public static final BlockEntityType<SkewerBlockEntity> SKEWER = Registries.of(SkewerBlockEntity::new, MyBlocks.SKEWER);
-    public static final BlockEntityType<MyBasinBlockEntity> BASIN = Registries.of(MyBasinBlockEntity::new, MyBlocks.BASIN);
+//    public static final BlockEntityType<MyBasinBlockEntity> BASIN = Registries.of(MyBasinBlockEntity::new, MyBlocks.BASIN);
     public static final BlockEntityType<SkewerPlateBlockEntity> SKEWER_PLATE = Registries.of(SkewerPlateBlockEntity::new, MyBlocks.SKEWER_PLATE);
-    public static final BlockEntityType<OvenBlockEntity> OVEN = Registries.of(OvenBlockEntity::new, MyBlocks.OVEN);
+//    public static final BlockEntityType<OvenBlockEntity> OVEN = Registries.of(OvenBlockEntity::new, MyBlocks.OVEN);
     public static final BlockEntityType<IronBarSkewerBlockEntity> IRON_BAR_SKEWER = Registries.of(IronBarSkewerBlockEntity::new, MyBlocks.IRON_BAR_SKEWER);
     static {
         Registries.register(MyIdentifiers.PAN, PAN);
@@ -57,14 +57,14 @@ public final class MyBlockEntityTypes {
         Registries.register(MyIdentifiers.BAMBOO_STEAMER, BAMBOO_STEAMER);
         Registries.register(MyIdentifiers.SMART_DRAIN, SMART_DRAIN);
         Registries.register(MyIdentifiers.COPPER_TUNNEL, COPPER_TUNNEL);
-        Registries.register(MyIdentifiers.MULTIFUNC_BASIN, MULTIFUNC_BASIN);
+//        Registries.register(MyIdentifiers.MULTIFUNC_BASIN, MULTIFUNC_BASIN);
         Registries.register(MyIdentifiers.VERTICAL_CUTTER, VERTICAL_CUTTER);
         Registries.register(MyIdentifiers.PRESSURE_COOKER, PRESSURE_COOKER);
         Registries.register(MyIdentifiers.MINCER, MINCER);
         Registries.register(MyIdentifiers.SKEWER, SKEWER);
-        Registries.register(MyIdentifiers.BASIN, BASIN);
+//        Registries.register(MyIdentifiers.BASIN, BASIN);
         Registries.register(MyIdentifiers.SKEWER_PLATE, SKEWER_PLATE);
-        Registries.register(MyIdentifiers.OVEN, OVEN);
+//        Registries.register(MyIdentifiers.OVEN, OVEN);
         Registries.register(MyIdentifiers.IRON_BAR_SKEWER, IRON_BAR_SKEWER);
     }
 
