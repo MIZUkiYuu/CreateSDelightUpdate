@@ -11,14 +11,14 @@
               "type": "minecraft:item",
               "conditions": [
                 {
-                  "block": "createsdelight:sweet_berries_cakes",
+                  "block": "createsdelight:sweet_berries_cake_s",
                   "condition": "minecraft:block_state_property",
                   "properties": {
                     "age": "0"
                   }
                 }
               ],
-              "name": "createsdelight:sweet_berries_cakes"
+              "name": "createsdelight:sweet_berries_cake_s"
             },
             {
               "type": "minecraft:item",

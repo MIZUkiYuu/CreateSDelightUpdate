@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "age=0": {
+      "model": "createsdelight:block/sweet_berries_cake_s"
+    },
+    "age=1": {
+      "model": "createsdelight:block/sweet_berries_cake_s_1"
+    },
+    "age=2": {
+      "model": "createsdelight:block/sweet_berries_cake_s_2"
+    },
+    "age=3": {
+      "model": "createsdelight:block/sweet_berries_cake_s_3"
+    }
+  }
+}
