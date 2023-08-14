@@ -11,7 +11,7 @@ import phoupraw.mcmod.createsdelight.registry.MyBlockEntityTypes;
 
 import java.util.List;
 public class MyBasinBlockEntity extends SmartBlockEntity implements IHaveGoggleInformation, SidedStorageBlockEntity {
-    public MyBasinBlockEntity(BlockPos pos, BlockState state) {this(MyBlockEntityTypes.BASIN, pos, state);}
+//    public MyBasinBlockEntity(BlockPos pos, BlockState state) {this(MyBlockEntityTypes.BASIN, pos, state);}
 
     public MyBasinBlockEntity(BlockEntityType<?> type, BlockPos pos, BlockState state) {
         super(type, pos, state);
