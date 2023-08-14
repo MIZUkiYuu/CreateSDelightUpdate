@@ -47,7 +47,7 @@ public final class MyChineseProvider extends FabricLanguageProvider {
         b.add(MyBlocks.SMART_DRAIN, "智能分液池");
         b.add("burn_time", "燃料时间：%s");
         b.add(MyBlocks.COPPER_TUNNEL, "铜隧道");
-        b.add(MyBlocks.MULTIFUNC_BASIN, "多功能工作盆");
+//        b.add(MyBlocks.MULTIFUNC_BASIN, "多功能工作盆");
         b.add(MyBlocks.VERTICAL_CUTTER, "纵切机");
         b.add(Internationals.keyOfCategory(MyRecipeTypes.VERTICAL_CUTTING.getId()), "纵切");
         b.add(MyBlocks.PRESSURE_COOKER, "压力锅控制器");
@@ -77,13 +77,13 @@ public final class MyChineseProvider extends FabricLanguageProvider {
         b.add(MyItems.THICK_HOT_COCOA, "厚热可可");
         b.add(VirtualFluids.getTranslationKey(MyFluids.THICK_HOT_COCOA), "厚热可可");
         b.add(MyBlocks.SKEWER, "炙烤扦");
-        b.add(MyBlocks.BASIN, "工作盆");
+//        b.add(MyBlocks.BASIN, "工作盆");
         b.add(MyBlocks.SKEWER_PLATE, "炙烤盘");
-        b.add(MyItems.SALT, "盐");
+//        b.add(MyItems.SALT, "盐");
         b.add(MyItems.KELP_ASH, "海带灰烬");
         b.add(MyBlocks.JELLY_BEANS, "糖豆");
         b.add(MyBlocks.JELLY_BEANS_CAKE, "糖豆蛋糕");
-        b.add(MyItems.YEAST, "酵母");
+//        b.add(MyItems.YEAST, "酵母");
         b.add(VirtualFluids.getTranslationKey(MyFluids.PASTE), "面糊");
         b.add(MyItems.CAKE_BASE, "蛋糕胚");
         b.add(MyItems.CAKE_BASE_SLICE, "蛋糕胚片");
@@ -96,7 +96,7 @@ public final class MyChineseProvider extends FabricLanguageProvider {
         b.add(MyItems.SUNFLOWER_KERNELS, "葵花籽仁");
         b.add(MyItems.BUCKETED_PUMPKIN_OIL, "桶装南瓜籽油");
         b.add(VirtualFluids.getTranslationKey(MyFluids.PUMPKIN_OIL), "南瓜籽油");
-        b.add(MyBlocks.OVEN, "烤箱");
+//        b.add(MyBlocks.OVEN, "烤箱");
         b.add(VirtualFluids.getTranslationKey(MyFluids.APPLE_PASTE), "苹果面糊");
         b.add(MyBlocks.APPLE_CAKE, "苹果蛋糕");
         b.add(MyBlocks.CARROT_CREAM_CAKE, "胡萝卜奶油蛋糕");
