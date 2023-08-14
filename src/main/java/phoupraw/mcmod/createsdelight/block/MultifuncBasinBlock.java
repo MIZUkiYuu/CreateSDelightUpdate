@@ -23,7 +23,7 @@ public class MultifuncBasinBlock extends Block implements IBE<MultifuncBasinBloc
 
     @Override
     public BlockEntityType<? extends MultifuncBasinBlockEntity> getBlockEntityType() {
-        return MyBlockEntityTypes.MULTIFUNC_BASIN;
+        return null;
     }
 
     @SuppressWarnings("deprecation")

@@ -9,7 +9,7 @@ import phoupraw.mcmod.createsdelight.registry.MyBlockEntityTypes;
 
 import java.util.List;
 public class MultifuncBasinBlockEntity extends SmartBlockEntity {
-    public MultifuncBasinBlockEntity(BlockPos pos, BlockState state) {this(MyBlockEntityTypes.MULTIFUNC_BASIN, pos, state);}
+//    public MultifuncBasinBlockEntity(BlockPos pos, BlockState state) {this(MyBlockEntityTypes.MULTIFUNC_BASIN, pos, state);}
 
     public MultifuncBasinBlockEntity(BlockEntityType<?> type, BlockPos pos, BlockState state) {
         super(type, pos, state);
