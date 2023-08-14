@@ -26,7 +26,8 @@ public class OvenBlock extends Block implements IBE<OvenBlockEntity> {
 
     @Override
     public BlockEntityType<? extends OvenBlockEntity> getBlockEntityType() {
-        return MyBlockEntityTypes.OVEN;
+//        return MyBlockEntityTypes.OVEN;
+        return null;
     }
 
     @SuppressWarnings("deprecation")

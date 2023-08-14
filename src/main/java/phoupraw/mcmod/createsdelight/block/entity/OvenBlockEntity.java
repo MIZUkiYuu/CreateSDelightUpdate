@@ -38,9 +38,9 @@ public class OvenBlockEntity extends SmartBlockEntity implements SidedStorageBlo
     private final SmartInventory inventory = new SmartInventory(SIZE, this);
     private final double[] countdowns = new double[SIZE];
 
-    public OvenBlockEntity(BlockPos pos, BlockState state) {
-        this(MyBlockEntityTypes.OVEN, pos, state);
-    }
+//    public OvenBlockEntity(BlockPos pos, BlockState state) {
+//        this(MyBlockEntityTypes.OVEN, pos, state);
+//    }
 
     public OvenBlockEntity(BlockEntityType<?> type, BlockPos pos, BlockState state) {
         super(type, pos, state);
