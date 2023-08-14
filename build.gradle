@@ -58,6 +58,8 @@ dependencies {
 
     modCompileOnly("dev.emi:emi:${emi_version}:api")
 
+    modApi(include "maven.modrinth:enchlevel-langpatch:2.1.2")
+
 }
 
 processResources {
