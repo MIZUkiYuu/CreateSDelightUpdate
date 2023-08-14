@@ -36,21 +36,21 @@ public final class MyBlocks {
     public static final BambooSteamerBlock BAMBOO_STEAMER = new BambooSteamerBlock(FabricBlockSettings.copyOf(BlocksRegistry.BASKET.get()));
     public static final SmartDrainBlock SMART_DRAIN = new SmartDrainBlock(FabricBlockSettings.copyOf(AllBlocks.ITEM_DRAIN.get()));
     public static final CopperTunnelBlock COPPER_TUNNEL = new CopperTunnelBlock(FabricBlockSettings.copyOf(AllBlocks.BRASS_TUNNEL.get()));
-    public static final MultifuncBasinBlock MULTIFUNC_BASIN = new MultifuncBasinBlock(FabricBlockSettings.copyOf(AllBlocks.BASIN.get()));
+//    public static final MultifuncBasinBlock MULTIFUNC_BASIN = new MultifuncBasinBlock(FabricBlockSettings.copyOf(AllBlocks.BASIN.get()));
     public static final VerticalCutterBlock VERTICAL_CUTTER = new VerticalCutterBlock(FabricBlockSettings.copyOf(AllBlocks.MECHANICAL_PRESS.get()));
     public static final PressureCookerBlock PRESSURE_COOKER = new PressureCookerBlock(FabricBlockSettings.copyOf(AllBlocks.MECHANICAL_PRESS.get()));
     public static final MincerBlock MINCER = new MincerBlock(FabricBlockSettings.copyOf(AllBlocks.MECHANICAL_MIXER.get()));
     public static final SkewerBlock SKEWER = new SkewerBlock();
-    public static final MyBasinBlock BASIN = new MyBasinBlock();
+//    public static final MyBasinBlock BASIN = new MyBasinBlock();
     public static final SkewerPlateBlock SKEWER_PLATE = new SkewerPlateBlock();
-    public static final OvenBlock OVEN = new OvenBlock();
+//    public static final OvenBlock OVEN = new OvenBlock();
     public static final Block IRON_BAR_SKEWER = new IronBarSkewerBlock();
 
     public static final JellyBeansBlock JELLY_BEANS = new JellyBeansBlock();
     public static final JellyBeansCakeBlock JELLY_BEANS_CAKE = new JellyBeansCakeBlock();
     public static final SweetBerriesCakeBlock SWEET_BERRIES_CAKE = new SweetBerriesCakeBlock();
     public static final Block BASQUE_CAKE = new BasqueCakeBlock();
-    public static final Block SWEET_BERRIES_CAKE_S = new SweetBerriesCakeSBlock();
+    public static final SweetBerriesCakeSBlock SWEET_BERRIES_CAKE_S = new SweetBerriesCakeSBlock();
     public static final Block BROWNIE = new BrownieBlock();
     public static final Block APPLE_CREAM_CAKE = new AppleCreamCakeBlock();
     public static final Block APPLE_CAKE = new AppleCakeBlock();
@@ -67,14 +67,14 @@ public final class MyBlocks {
         Registries.register(MyIdentifiers.BAMBOO_STEAMER, BAMBOO_STEAMER);
         Registries.register(MyIdentifiers.SMART_DRAIN, SMART_DRAIN);
         Registries.register(MyIdentifiers.COPPER_TUNNEL, COPPER_TUNNEL);
-        Registries.register(MyIdentifiers.MULTIFUNC_BASIN, MULTIFUNC_BASIN);
+//        Registries.register(MyIdentifiers.MULTIFUNC_BASIN, MULTIFUNC_BASIN);
         Registries.register(MyIdentifiers.VERTICAL_CUTTER, VERTICAL_CUTTER);
         Registries.register(MyIdentifiers.PRESSURE_COOKER, PRESSURE_COOKER);
         Registries.register(MyIdentifiers.MINCER, MINCER);
         Registries.register(MyIdentifiers.SKEWER, SKEWER);
-        Registries.register(MyIdentifiers.BASIN, BASIN);
+//        Registries.register(MyIdentifiers.BASIN, BASIN);
         Registries.register(MyIdentifiers.SKEWER_PLATE, SKEWER_PLATE);
-        Registries.register(MyIdentifiers.OVEN, OVEN);
+//        Registries.register(MyIdentifiers.OVEN, OVEN);
         Registries.register(MyIdentifiers.IRON_BAR_SKEWER, IRON_BAR_SKEWER);
 
         Registries.register(MyIdentifiers.JELLY_BEANS, JELLY_BEANS);
