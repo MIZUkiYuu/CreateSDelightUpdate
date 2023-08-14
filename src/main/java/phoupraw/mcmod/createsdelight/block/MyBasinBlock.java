@@ -24,6 +24,7 @@ public class MyBasinBlock extends Block implements IBE<MyBasinBlockEntity>, IWre
 
     @Override
     public BlockEntityType<? extends MyBasinBlockEntity> getBlockEntityType() {
-        return MyBlockEntityTypes.BASIN;
+//        return MyBlockEntityTypes.BASIN;
+        return null;
     }
 }
