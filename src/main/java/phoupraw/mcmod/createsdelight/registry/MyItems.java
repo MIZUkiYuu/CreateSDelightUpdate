@@ -49,20 +49,20 @@ public final class MyItems {
     public static final BlockItem BAMBOO_STEAMER = new BlockItem(MyBlocks.BAMBOO_STEAMER, newSettings());
     public static final BlockItem SMART_DRAIN = new BlockItem(MyBlocks.SMART_DRAIN, newSettings());
     public static final BlockItem COPPER_TUNNEL = new BlockItem(MyBlocks.COPPER_TUNNEL, newSettings());
-    public static final BlockItem MULTIFUNC_BASIN = new BlockItem(MyBlocks.MULTIFUNC_BASIN, newSettings()) {
-        @Override
-        public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
-            super.appendTooltip(stack, world, tooltip, context);
-            tooltip.add(Text.literal("In dev, No using. 开发中，请勿使用。"));
-        }
-    };
+//    public static final BlockItem MULTIFUNC_BASIN = new BlockItem(MyBlocks.MULTIFUNC_BASIN, newSettings()) {
+//        @Override
+//        public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
+//            super.appendTooltip(stack, world, tooltip, context);
+//            tooltip.add(Text.literal("In dev, No using. 开发中，请勿使用。"));
+//        }
+//    };
     public static final BlockItem VERTICAL_CUTTER = new AssemblyOperatorBlockItem(MyBlocks.VERTICAL_CUTTER, newSettings());
     public static final BlockItem PRESSURE_COOKER = new AssemblyOperatorBlockItem(MyBlocks.PRESSURE_COOKER, newSettings());
     public static final BlockItem MINCER = new AssemblyOperatorBlockItem(MyBlocks.MINCER, newSettings());
     public static final BlockItem SKEWER = new AssemblyOperatorBlockItem(MyBlocks.SKEWER, newSettings());
-    public static final BlockItem BASIN = new BlockItem(MyBlocks.BASIN, newSettings());
+//    public static final BlockItem BASIN = new BlockItem(MyBlocks.BASIN, newSettings());
     public static final BlockItem SKEWER_PLATE = new BlockItem(MyBlocks.SKEWER_PLATE, newSettings());
-    public static final BlockItem OVEN = new BlockItem(MyBlocks.OVEN, newSettings());
+//    public static final BlockItem OVEN = new BlockItem(MyBlocks.OVEN, newSettings());
 
     //可食用方块
     public static final StatusEffectsBlockItem JELLY_BEANS = new StatusEffectsBlockItem(MyBlocks.JELLY_BEANS, MyItems.newSettings()
@@ -189,9 +189,9 @@ public final class MyItems {
     public static final Item EGG_SHELL = new Item(newSettings());
     public static final Item EGG_DOUGH = new Item(newSettings());
     public static final Item CRUSHED_ICE = new Item(newSettings());
-    public static final Item SALT = new Item(newSettings());
+//    public static final Item SALT = new Item(newSettings());
     public static final Item KELP_ASH = new Item(newSettings());
-    public static final Item YEAST = new Item(newSettings());
+//    public static final Item YEAST = new Item(newSettings());
     public static final Item RAW_BASQUE_CAKE = new Item(newSettings());
     public static final IronBowlItem IRON_BOWL = new IronBowlItem();
 
@@ -392,18 +392,18 @@ public final class MyItems {
         Registries.register(MyIdentifiers.BAMBOO_STEAMER, BAMBOO_STEAMER);
         Registries.register(MyIdentifiers.SMART_DRAIN, SMART_DRAIN);
         Registries.register(MyIdentifiers.COPPER_TUNNEL, COPPER_TUNNEL);
-        Registries.register(MyIdentifiers.MULTIFUNC_BASIN, MULTIFUNC_BASIN);
+//        Registries.register(MyIdentifiers.MULTIFUNC_BASIN, MULTIFUNC_BASIN);
         Registries.register(MyIdentifiers.VERTICAL_CUTTER, VERTICAL_CUTTER);
         Registries.register(MyIdentifiers.PRESSURE_COOKER, PRESSURE_COOKER);
         Registries.register(MyIdentifiers.MINCER, MINCER);
         Registries.register(MyIdentifiers.SKEWER, SKEWER);
-        Registries.register(MyIdentifiers.BASIN, BASIN);
+//        Registries.register(MyIdentifiers.BASIN, BASIN);
         Registries.register(MyIdentifiers.SKEWER_PLATE, SKEWER_PLATE);
         Registries.register(MyIdentifiers.KELP_ASH, KELP_ASH);
-        Registries.register(MyIdentifiers.YEAST, YEAST);
+//        Registries.register(MyIdentifiers.YEAST, YEAST);
         Registries.register(MyIdentifiers.CAKE_BASE, CAKE_BASE);
         Registries.register(MyIdentifiers.CAKE_BASE_SLICE, CAKE_BASE_SLICE);
-        Registries.register(MyIdentifiers.OVEN, OVEN);
+//        Registries.register(MyIdentifiers.OVEN, OVEN);
 
         Registries.register(MyIdentifiers.JELLY_BEANS, JELLY_BEANS);
         Registries.register(MyIdentifiers.JELLY_BEANS_CAKE, JELLY_BEANS_CAKE);
@@ -424,7 +424,7 @@ public final class MyItems {
         Registries.register(MyIdentifiers.EGG_SHELL, EGG_SHELL);
         Registries.register(MyIdentifiers.EGG_DOUGH, EGG_DOUGH);
         Registries.register(MyIdentifiers.CRUSHED_ICE, CRUSHED_ICE);
-        Registries.register(MyIdentifiers.SALT, SALT);
+//        Registries.register(MyIdentifiers.SALT, SALT);
         Registries.register(MyIdentifiers.RAW_BASQUE_CAKE, RAW_BASQUE_CAKE);
         Registries.register(MyIdentifiers.BUCKETED_PUMPKIN_OIL, BUCKETED_PUMPKIN_OIL);
         Registries.register(MyIdentifiers.IRON_BOWL, IRON_BOWL);
