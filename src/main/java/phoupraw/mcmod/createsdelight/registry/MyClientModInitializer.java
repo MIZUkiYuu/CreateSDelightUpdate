@@ -66,29 +66,38 @@ public final class MyClientModInitializer implements ClientModInitializer {
         BlockEntityRendererFactories.register(MyBlockEntityTypes.BAMBOO_STEAMER, BambooSteamerRenderer::new);
         BlockEntityRendererFactories.register(MyBlockEntityTypes.SMART_DRAIN, SmartDrainRenderer::new);
         BlockEntityRendererFactories.register(MyBlockEntityTypes.COPPER_TUNNEL, CopperTunnelRenderer::new);
-        BlockEntityRendererFactories.register(MyBlockEntityTypes.MULTIFUNC_BASIN, MultifuncBasinRenderer::new);
+//        BlockEntityRendererFactories.register(MyBlockEntityTypes.MULTIFUNC_BASIN, MultifuncBasinRenderer::new);
         BlockEntityRendererFactories.register(MyBlockEntityTypes.VERTICAL_CUTTER, castKineticRendererFactory());
         BlockEntityRendererFactories.register(MyBlockEntityTypes.PRESSURE_COOKER, castKineticRendererFactory());
         BlockEntityRendererFactories.register(MyBlockEntityTypes.MINCER, castKineticRendererFactory());
         BlockEntityRendererFactories.register(MyBlockEntityTypes.SKEWER, SkewerRenderer::new);
         BlockEntityRendererFactories.register(MyBlockEntityTypes.SKEWER_PLATE, SkewerPlateRenderer::new);
-        BlockEntityRendererFactories.register(MyBlockEntityTypes.OVEN, OvenRenderer::new);
+//        BlockEntityRendererFactories.register(MyBlockEntityTypes.OVEN, OvenRenderer::new);
         BlockEntityRendererFactories.register(MyBlockEntityTypes.IRON_BAR_SKEWER, IronBarSkewerRenderer::new);
-        BlockRenderLayerMap.INSTANCE.putBlocks(RenderLayer.getCutout(), MyBlocks.GRILL, MyBlocks.SPRINKLER, MyBlocks.BAMBOO_STEAMER, MyBlocks.SMART_DRAIN, MyBlocks.COPPER_TUNNEL, MyBlocks.MULTIFUNC_BASIN, MyBlocks.PRESSURE_COOKER, MyBlocks.MINCER, MyBlocks.JELLY_BEANS, MyBlocks.JELLY_BEANS_CAKE, MyBlocks.OVEN);
+        BlockRenderLayerMap.INSTANCE.putBlocks(RenderLayer.getCutout(), MyBlocks.GRILL, MyBlocks.SPRINKLER, MyBlocks.BAMBOO_STEAMER, MyBlocks.SMART_DRAIN, MyBlocks.COPPER_TUNNEL, MyBlocks.PRESSURE_COOKER, MyBlocks.MINCER, MyBlocks.JELLY_BEANS, MyBlocks.JELLY_BEANS_CAKE);
+//        BlockRenderLayerMap.INSTANCE.putBlocks(RenderLayer.getCutout(), MyBlocks.GRILL, MyBlocks.SPRINKLER, MyBlocks.BAMBOO_STEAMER, MyBlocks.SMART_DRAIN, MyBlocks.COPPER_TUNNEL, MyBlocks.MULTIFUNC_BASIN, MyBlocks.PRESSURE_COOKER, MyBlocks.MINCER, MyBlocks.JELLY_BEANS, MyBlocks.JELLY_BEANS_CAKE, MyBlocks.OVEN);
 
         FluidRenderHandlerRegistry.INSTANCE.register(MyFluids.SUNFLOWER_OIL, SimpleFluidRenderHandler.coloredWater(MapColor.TERRACOTTA_YELLOW.color));
         FluidRenderHandlerRegistry.INSTANCE.register(MyFluids.PUMPKIN_OIL, SimpleFluidRenderHandler.coloredWater(MapColor.TERRACOTTA_ORANGE.color));
+        FluidRenderHandlerRegistry.INSTANCE.register(MyFluids.ROSE_MILK_TEA, SimpleFluidRenderHandler.coloredWater(MapColor.TERRACOTTA_BROWN.color));
+        FluidRenderHandlerRegistry.INSTANCE.register(MyFluids.WHEAT_BLACK_TEA, SimpleFluidRenderHandler.coloredWater(MapColor.TERRACOTTA_BLACK.color));
+        FluidRenderHandlerRegistry.INSTANCE.register(MyFluids.VEGETABLE_BIG_STEW, SimpleFluidRenderHandler.coloredWater(MapColor.DARK_GREEN.color));
+        FluidRenderHandlerRegistry.INSTANCE.register(MyFluids.MELON_JUICE, SimpleFluidRenderHandler.coloredWater(MapColor.RED.color));
+
         Identifier milk_still = new Identifier("milk", "block/milk_still");
-        FluidRenderHandlerRegistry.INSTANCE.register(MyFluids.MELON_JUICE, VirtualFluids.newSimpleFluidRenderHandler(milk_still, 0xE24334));
         FluidRenderHandlerRegistry.INSTANCE.register(MyFluids.PASTE, VirtualFluids.newSimpleFluidRenderHandler(milk_still, MapColor.TERRACOTTA_WHITE.color));
         FluidRenderHandlerRegistry.INSTANCE.register(MyFluids.APPLE_PASTE, VirtualFluids.newSimpleFluidRenderHandler(milk_still, 0xfffab9));
         FluidRenderHandlerRegistry.INSTANCE.register(MyFluids.CHOCOLATE_PASTE, VirtualFluids.newSimpleFluidRenderHandler(milk_still, 0xf2aba0));
+
         Identifier turbid = MyIdentifiers.of("block/turbid");
         FluidRenderHandlerRegistry.INSTANCE.register(MyFluids.TOMATO_SAUCE, VirtualFluids.newSimpleFluidRenderHandler(turbid, MapColor.RED.color));
         FluidRenderHandlerRegistry.INSTANCE.register(MyFluids.BEETROOT_SOUP, VirtualFluids.newSimpleFluidRenderHandler(turbid, MapColor.DULL_RED.color));
         FluidRenderHandlerRegistry.INSTANCE.register(MyFluids.POPPY_RUSSIAN_SOUP, VirtualFluids.newSimpleFluidRenderHandler(turbid, MapColor.DARK_RED.color));
         FluidRenderHandlerRegistry.INSTANCE.register(MyFluids.MASHED_POTATO, VirtualFluids.newSimpleFluidRenderHandler(turbid, MapColor.PALE_YELLOW.color));
-        VirtualFluids.registerTexture(MyFluids.EGG_LIQUID, MyFluids.ICED_MELON_JUICE, MyFluids.THICK_HOT_COCOA, MyFluids.WHEAT_BLACK_TEA, MyFluids.ROSE_MILK_TEA, MyFluids.VEGETABLE_BIG_STEW);
+        FluidRenderHandlerRegistry.INSTANCE.register(MyFluids.ICED_MELON_JUICE, VirtualFluids.newSimpleFluidRenderHandler(turbid, MapColor.DARK_RED.color));
+
+
+        VirtualFluids.registerTexture(MyFluids.EGG_LIQUID, MyFluids.THICK_HOT_COCOA);
         BlockRenderLayerMap.INSTANCE.putFluids(RenderLayer.getTranslucent(), MyFluids.SUNFLOWER_OIL, MyFluids.VEGETABLE_BIG_STEW, MyFluids.ROSE_MILK_TEA, MyFluids.BEETROOT_SOUP, MyFluids.TOMATO_SAUCE, MyFluids.POPPY_RUSSIAN_SOUP, MyFluids.WHEAT_BLACK_TEA, MyFluids.PUMPKIN_OIL);
 
         ModelLoadingRegistry.INSTANCE.registerResourceProvider(resourceManager -> (resourceId, context) -> resourceId.equals(UnbakedIronBowlModel.ID) ? new UnbakedIronBowlModel() : null);
