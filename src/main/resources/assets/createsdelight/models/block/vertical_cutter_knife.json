@@ -3,8 +3,8 @@
 	"parent": "block/block",
 	"textures": {
 		"mechanical_press_pole": "create:block/mechanical_press_pole",
-		"particle": "create:block/basin_side",
-		"basin_side": "create:block/basin_side"
+		"particle": "create:block/diodes/brass_diode_base",
+		"brass_diode_base": "create:block/diodes/brass_diode_base"
 	},
 	"elements": [
 		{
@@ -13,12 +13,12 @@
 			"to": [8.0625, 5, 14],
 			"rotation": {"angle": 0, "axis": "y", "origin": [8, 2.75, 8]},
 			"faces": {
-				"north": {"uv": [2, 7, 2.125, 14], "texture": "#basin_side"},
-				"east": {"uv": [2, 7, 14, 14], "texture": "#basin_side"},
-				"south": {"uv": [2, 7, 2.125, 14], "texture": "#basin_side"},
-				"west": {"uv": [2, 7, 14, 14], "texture": "#basin_side"},
-				"up": {"uv": [2, 7.5, 14, 7.625], "rotation": 270, "texture": "#basin_side"},
-				"down": {"uv": [2, 7.5, 14, 7.625], "rotation": 270, "texture": "#basin_side"}
+				"north": {"uv": [2, 7, 2.125, 14], "texture": "#brass_diode_base"},
+				"east": {"uv": [2, 7, 14, 14], "texture": "#brass_diode_base"},
+				"south": {"uv": [2, 7, 2.125, 14], "texture": "#brass_diode_base"},
+				"west": {"uv": [2, 7, 14, 14], "texture": "#brass_diode_base"},
+				"up": {"uv": [2, 7.5, 14, 7.625], "rotation": 270, "texture": "#brass_diode_base"},
+				"down": {"uv": [2, 7.5, 14, 7.625], "rotation": 270, "texture": "#brass_diode_base"}
 			}
 		},
 		{
