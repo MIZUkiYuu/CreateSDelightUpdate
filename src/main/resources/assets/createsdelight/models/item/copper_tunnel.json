@@ -4,7 +4,7 @@
 	"textures": {
 		"0": "create:block/copper_casing",
 		"1": "createsdelight:block/copper_tunnel",
-		"3": "create:block/brass_funnel_back",
+		"3": "createsdelight:block/brass_funnel_back",
 		"particle": "create:block/copper_casing"
 	},
 	"elements": [
