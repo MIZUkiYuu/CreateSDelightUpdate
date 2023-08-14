@@ -19,7 +19,7 @@ import phoupraw.mcmod.createsdelight.rei.*;
 public final class MyREIClientPlugin implements REIClientPlugin {
     @Override
     public void registerCategories(CategoryRegistry registry) {
-        EntryStack<ItemStack> depot = EntryStacks.of(AllBlocks.DEPOT.get()), belt = EntryStacks.of(AllBlocks.BELT.get()), basin = EntryStacks.of(AllBlocks.BASIN.get());
+        EntryStack<ItemStack> depot = EntryStacks.of(AllBlocks.DEPOT.get()), belt = EntryStacks.of(AllBlocks.BELT.get());
         registry.add(PanFryingCategory.INSTANCE);
         registry.addWorkstations(PanFryingCategory.ID, EntryStacks.of(MyItems.PAN));
         registry.add(GrillingCategory.INSTANCE);
@@ -31,11 +31,11 @@ public final class MyREIClientPlugin implements REIClientPlugin {
         registry.addWorkstations(CategoryIdentifier.of("create", "draining"), EntryStacks.of(MyItems.SMART_DRAIN));
         registry.addWorkstations(VerticalCuttingCategory.ID, EntryStacks.of(MyItems.VERTICAL_CUTTER), depot, belt);
         registry.add(VerticalCuttingCategory.INSTANCE);
-        registry.addWorkstations(PressureCookingCategory.ID, EntryStacks.of(MyItems.PRESSURE_COOKER), basin);
+        registry.addWorkstations(PressureCookingCategory.ID, EntryStacks.of(MyItems.PRESSURE_COOKER));
         registry.add(PressureCookingCategory.INSTANCE);
-        registry.addWorkstations(MincingCategory.ID, EntryStacks.of(MyItems.MINCER), basin);
+        registry.addWorkstations(MincingCategory.ID, EntryStacks.of(MyItems.MINCER));
         registry.add(MincingCategory.INSTANCE);
-        registry.addWorkstations(BakingCategory.ID, EntryStacks.of(MyItems.OVEN));
+//        registry.addWorkstations(BakingCategory.ID, EntryStacks.of(MyItems.OVEN));
         registry.add(BakingCategory.INSTANCE);
 
 //        registry.add(new LootTableCategory());
