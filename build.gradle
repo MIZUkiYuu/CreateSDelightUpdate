@@ -88,7 +88,7 @@ java {
 
 jar {
     from("LICENSE") {
-        rename { "${it}_${project.archivesBaseName}" }
+        rename { "${it}_${project.archives_base_name}" }
     }
     exclude("com/simibubi/create/content/contraptions/components/deployer/DeployerBlockEntity.class", "com/simibubi/create/content/contraptions/components/deployer/DeployerBlockEntity\$State.class", "com/simibubi/create/content/contraptions/components/deployer/DeployerBlockEntity\$Mode.class", "com/simibubi/create/content/contraptions/components/deployer/DeployerBlockEntity\$1.class")
 }
