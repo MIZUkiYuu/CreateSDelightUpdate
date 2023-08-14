@@ -15,7 +15,7 @@ public final class MyItemTagProvider extends FabricTagProvider.ItemTagProvider {
     protected void generateTags() {
         getOrCreateTagBuilder(MyItemTags.COOKED_PORK).add(MyItems.PAN_FRIED_PORK_SLICE);
         getOrCreateTagBuilder(MyItemTags.DOUGH).add(ItemsRegistry.WHEAT_DOUGH.get());
-        getOrCreateTagBuilder(MyItemTags.SALT).add(MyItems.SALT);
+//        getOrCreateTagBuilder(MyItemTags.SALT).add(MyItems.SALT);
         getOrCreateTagBuilder(AllTags.AllItemTags.UPRIGHT_ON_BELT.tag).add(MyItems.EGG_SHELL);
     }
 }
