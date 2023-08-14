@@ -41,8 +41,8 @@ public final class MyRecipeProvider extends FabricRecipeProvider {
         offerStonecuttingRecipe(exporter, MyItems.THICK_PORK_SLICE, Items.PORKCHOP, 2);
         offerStonecuttingRecipe(exporter, MyItems.THIN_PORK_SLICE, MyItems.THICK_PORK_SLICE, 2);
         offerStonecuttingRecipe(exporter, MyItems.SKEWER, AllBlocks.SHAFT.get(), 1);
-        offerStonecuttingRecipe(exporter, MyItems.BASIN, AllBlocks.BASIN.get(), 1);
-        offerCookingRecipe(exporter, "cooking", RecipeSerializer.SMELTING, 20 * 20, Items.WATER_BUCKET, MyItems.SALT, 0.4f);
+//        offerStonecuttingRecipe(exporter, MyItems.BASIN, AllBlocks.BASIN.get(), 1);
+//        offerCookingRecipe(exporter, "cooking", RecipeSerializer.SMELTING, 20 * 20, Items.WATER_BUCKET, MyItems.SALT, 0.4f);
         offerCookingRecipe(exporter, "cooking", RecipeSerializer.SMELTING, 20 * 10, Items.DRIED_KELP, MyItems.KELP_ASH, 0.2f);
         offerCookingRecipe(exporter, "smoking", RecipeSerializer.SMOKING, 20 * 10, MyItems.RAW_BASQUE_CAKE, MyItems.BASQUE_CAKE, 2f);
         ShapedRecipeJsonBuilder.create(MyItems.SPRINKLER)
@@ -109,24 +109,24 @@ public final class MyRecipeProvider extends FabricRecipeProvider {
           .input('C', MyItems.CAKE_BASE_SLICE)
           .criterion("stupidMojang", conditionsFromItem(Items.CRAFTING_TABLE))
           .offerTo(exporter);
-        ShapedRecipeJsonBuilder.create(MyItems.OVEN)
-          .group("oven")
-          .pattern("ACA")
-          .pattern("B B")
-          .pattern("ACA")
-          .input('A', AllItems.ANDESITE_ALLOY.get())
-          .input('B', Items.GLASS_PANE)
-          .input('C', AllItems.IRON_SHEET.get())
-          .criterion("stupidMojang", conditionsFromItem(Items.CRAFTING_TABLE))
-          .offerTo(exporter, MyIdentifiers.of("crafting/oven_1"));
-        ShapedRecipeJsonBuilder.create(MyItems.OVEN)
-          .group("oven")
-          .pattern("A")
-          .pattern("B")
-          .input('A', AllBlocks.FLUID_TANK.get())
-          .input('B', AllBlocks.BASIN.get())
-          .criterion("stupidMojang", conditionsFromItem(Items.CRAFTING_TABLE))
-          .offerTo(exporter, MyIdentifiers.of("crafting/oven_2"));
+//        ShapedRecipeJsonBuilder.create(MyItems.OVEN)
+//          .group("oven")
+//          .pattern("ACA")
+//          .pattern("B B")
+//          .pattern("ACA")
+//          .input('A', AllItems.ANDESITE_ALLOY.get())
+//          .input('B', Items.GLASS_PANE)
+//          .input('C', AllItems.IRON_SHEET.get())
+//          .criterion("stupidMojang", conditionsFromItem(Items.CRAFTING_TABLE))
+//          .offerTo(exporter, MyIdentifiers.of("crafting/oven_1"));
+//        ShapedRecipeJsonBuilder.create(MyItems.OVEN)
+//          .group("oven")
+//          .pattern("A")
+//          .pattern("B")
+//          .input('A', AllBlocks.FLUID_TANK.get())
+//          .input('B', AllBlocks.BASIN.get())
+//          .criterion("stupidMojang", conditionsFromItem(Items.CRAFTING_TABLE))
+//          .offerTo(exporter, MyIdentifiers.of("crafting/oven_2"));
         ShapedRecipeJsonBuilder.create(MyItems.IRON_BOWL)
           .pattern("A A")
           .pattern(" A ")
@@ -139,12 +139,13 @@ public final class MyRecipeProvider extends FabricRecipeProvider {
             MyItems.SMART_DRAIN)
           .criterion("", conditionsFromItem(Items.CRAFTING_TABLE))
           .offerTo(exporter, MyIdentifiers.SMART_DRAIN);
-        SmithingRecipeJsonBuilder.create(
-            Ingredient.ofItems(AllBlocks.BASIN.get()),
-            Ingredient.ofItems(AllItems.ELECTRON_TUBE.get()),
-            MyItems.MULTIFUNC_BASIN)
-          .criterion("", conditionsFromItem(Items.CRAFTING_TABLE))
-          .offerTo(exporter, MyIdentifiers.MULTIFUNC_BASIN);
+//        SmithingRecipeJsonBuilder.create(
+//            Ingredient.ofItems(AllBlocks.BASIN.get()),
+//            Ingredient.ofItems(AllItems.ELECTRON_TUBE.get()),
+//            MyItems.MULTIFUNC_BASIN)
+//          .criterion("", conditionsFromItem(Items.CRAFTING_TABLE))
+//          .offerTo(exporter, MyIdentifiers.MULTIFUNC_BASIN);
+
 
 //        exporter.accept(new CuttingBoardRecipeJsonProvider(new CuttingBoardRecipe(MyIdentifiers.THICK_PORK_SLICE, "", Ingredient.ofItems(Items.PORKCHOP), Ingredient.fromTag(TagsRegistry.STRAW_HARVESTERS), DefaultedList.copyOf(ChanceResult.EMPTY, new ChanceResult(new ItemStack(MyItems.THICK_PORK_SLICE, 2), 1)), SoundsRegistry.BLOCK_CUTTING_BOARD_KNIFE.name())));
 //        exporter.accept(new CuttingBoardRecipeJsonProvider(new CuttingBoardRecipe(MyIdentifiers.THIN_PORK_SLICE, "", Ingredient.ofItems(MyItems.THICK_PORK_SLICE), Ingredient.fromTag(TagsRegistry.STRAW_HARVESTERS), DefaultedList.copyOf(ChanceResult.EMPTY, new ChanceResult(new ItemStack(MyItems.THIN_PORK_SLICE, 2), 1)), SoundsRegistry.BLOCK_CUTTING_BOARD_KNIFE.name())));
@@ -418,12 +419,12 @@ public final class MyRecipeProvider extends FabricRecipeProvider {
           .averageProcessingDuration()
           .output(MyFluids.THICK_HOT_COCOA, FluidConstants.BOTTLE * 2)
           .build(exporter);
-        new ProcessingRecipeBuilder<>(LambdasC.newingPressureCooking(), MyIdentifiers.SALT)
-          .require(Fluids.WATER, FluidConstants.BUCKET)
-          .requiresHeat(HeatCondition.HEATED)
-          .duration(20 * 15)
-          .output(MyItems.SALT)
-          .build(exporter);
+//        new ProcessingRecipeBuilder<>(LambdasC.newingPressureCooking(), MyIdentifiers.SALT)
+//          .require(Fluids.WATER, FluidConstants.BUCKET)
+//          .requiresHeat(HeatCondition.HEATED)
+//          .duration(20 * 15)
+//          .output(MyItems.SALT)
+//          .build(exporter);
         new ProcessingRecipeBuilder<>(LambdasC.newingCompacting(), MyIdentifiers.JELLY_BEANS)
           .require(Items.SUGAR)
           .require(Items.LIGHT_BLUE_DYE)
@@ -432,13 +433,13 @@ public final class MyRecipeProvider extends FabricRecipeProvider {
           .averageProcessingDuration()
           .output(MyItems.JELLY_BEANS)
           .build(exporter);
-        new ProcessingRecipeBuilder<>(LambdasC.newingPressureCooking(), MyIdentifiers.YEAST)
-          .require(Items.SUGAR)
-          .require(AllItems.DOUGH.get())
-          .require(MyItems.KELP_ASH)
-          .duration(20 * 60)
-          .output(MyItems.YEAST, 5)
-          .build(exporter);
+//        new ProcessingRecipeBuilder<>(LambdasC.newingPressureCooking(), MyIdentifiers.YEAST)
+//          .require(Items.SUGAR)
+//          .require(AllItems.DOUGH.get())
+//          .require(MyItems.KELP_ASH)
+//          .duration(20 * 60)
+//          .output(MyItems.YEAST, 5)
+//          .build(exporter);
         new ProcessingRecipeBuilder<>(LambdasC.newingMixing(), MyIdentifiers.PASTE)
           .require(MyItems.KELP_ASH)
           .require(AllItems.WHEAT_FLOUR.get())
