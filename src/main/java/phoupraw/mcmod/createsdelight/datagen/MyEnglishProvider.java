@@ -47,7 +47,7 @@ public final class MyEnglishProvider extends FabricLanguageProvider {
         b.add(MyBlocks.SMART_DRAIN, "Smart Item Drain");
         b.add("burn_time", "Fuel Time: %s");
         b.add(MyBlocks.COPPER_TUNNEL, "Copper Tunnel");
-        b.add(MyBlocks.MULTIFUNC_BASIN, "Multifunctional Basin");
+//        b.add(MyBlocks.MULTIFUNC_BASIN, "Multifunctional Basin");
         b.add(MyBlocks.VERTICAL_CUTTER, "Vertical Cutter");
         b.add(Internationals.keyOfCategory(MyRecipeTypes.VERTICAL_CUTTING.getId()), "Vertical Cutting");
         b.add(MyBlocks.PRESSURE_COOKER, "Pressure Cooker Controller");
@@ -77,13 +77,13 @@ public final class MyEnglishProvider extends FabricLanguageProvider {
         b.add(MyItems.THICK_HOT_COCOA, "Thick Hot Cocoa");
         b.add(VirtualFluids.getTranslationKey(MyFluids.THICK_HOT_COCOA), "Thick Hot Cocoa");
         b.add(MyBlocks.SKEWER, "Skewer");
-        b.add(MyBlocks.BASIN, "Basin");
+//        b.add(MyBlocks.BASIN, "Basin");
         b.add(MyBlocks.SKEWER_PLATE, "Skewer Plate");
-        b.add(MyItems.SALT, "Salt");
+//        b.add(MyItems.SALT, "Salt");
         b.add(MyItems.KELP_ASH, "Kelp Ash");
         b.add(MyBlocks.JELLY_BEANS, "Jelly Beans");
         b.add(MyBlocks.JELLY_BEANS_CAKE, "Jelly Beans Cake");
-        b.add(MyItems.YEAST, "Yeast");
+//        b.add(MyItems.YEAST, "Yeast");
         b.add(VirtualFluids.getTranslationKey(MyFluids.PASTE), "Paste");
         b.add(MyItems.CAKE_BASE, "Cake Base");
         b.add(MyItems.CAKE_BASE_SLICE, "Cake Base Slice");
@@ -96,7 +96,7 @@ public final class MyEnglishProvider extends FabricLanguageProvider {
         b.add(MyItems.SUNFLOWER_KERNELS, "Sunflower Kernels");
         b.add(MyItems.BUCKETED_PUMPKIN_OIL, "Bucketed Pumpkin Seeds Oil");
         b.add(VirtualFluids.getTranslationKey(MyFluids.PUMPKIN_OIL), "Pumpkin Seeds Oil");
-        b.add(MyBlocks.OVEN, "Oven");
+//        b.add(MyBlocks.OVEN, "Oven");
         b.add(VirtualFluids.getTranslationKey(MyFluids.APPLE_PASTE), "Apple Paste");
         b.add(MyBlocks.APPLE_CAKE, "Apple Cake");
         b.add(MyBlocks.CARROT_CREAM_CAKE, "Carrot Cream Cake");
