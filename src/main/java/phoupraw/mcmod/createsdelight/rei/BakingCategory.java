@@ -33,7 +33,8 @@ public class BakingCategory implements DisplayCategory<BakingDisplay> {
 
     @Override
     public Renderer getIcon() {
-        return EntryStacks.of(MyItems.OVEN);
+//        return EntryStacks.of(MyItems.OVEN);
+        return null;
     }
 
     @Override
