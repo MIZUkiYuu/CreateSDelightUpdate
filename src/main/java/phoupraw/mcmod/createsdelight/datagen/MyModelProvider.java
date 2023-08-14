@@ -54,7 +54,8 @@ public final class MyModelProvider extends FabricModelProvider {
      */
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator generator) {
-        DataGenerations.registerSimpleState(generator, MyBlocks.PAN, MyBlocks.GRILL, MyBlocks.SPRINKLER, MyBlocks.BAMBOO_STEAMER, MyBlocks.MULTIFUNC_BASIN, MyBlocks.BASIN, MyBlocks.SKEWER_PLATE, MyBlocks.JELLY_BEANS, MyBlocks.BROWNIE, MyBlocks.OVEN, MyBlocks.SMALL_CHOCOLATE_CREAM_CAKE);
+        DataGenerations.registerSimpleState(generator, MyBlocks.PAN, MyBlocks.GRILL, MyBlocks.SPRINKLER, MyBlocks.BAMBOO_STEAMER, MyBlocks.SKEWER_PLATE, MyBlocks.JELLY_BEANS, MyBlocks.BROWNIE, MyBlocks.SMALL_CHOCOLATE_CREAM_CAKE);
+//        DataGenerations.registerSimpleState(generator, MyBlocks.PAN, MyBlocks.GRILL, MyBlocks.SPRINKLER, MyBlocks.BAMBOO_STEAMER, MyBlocks.MULTIFUNC_BASIN, MyBlocks.BASIN, MyBlocks.SKEWER_PLATE, MyBlocks.JELLY_BEANS, MyBlocks.BROWNIE, MyBlocks.OVEN, MyBlocks.SMALL_CHOCOLATE_CREAM_CAKE);
         horizontalAxis(generator, MyBlocks.VERTICAL_CUTTER, ModelIds.getBlockSubModelId(AllBlocks.MECHANICAL_PRESS.get(), "/block"));
         horizontalAxis(generator, MyBlocks.PRESSURE_COOKER, ModelIds.getBlockModelId(MyBlocks.PRESSURE_COOKER));
         intProperty(generator, MyBlocks.JELLY_BEANS_CAKE, Properties.AGE_3);
@@ -93,7 +94,7 @@ public final class MyModelProvider extends FabricModelProvider {
         }
         DataGenerations.excludeFromSimpleItemModelGeneration(generator, MyBlocks.COPPER_TUNNEL, MyBlocks.VERTICAL_CUTTER, MyBlocks.PRESSURE_COOKER, MyBlocks.MINCER, MyBlocks.JELLY_BEANS, MyBlocks.JELLY_BEANS_CAKE, MyBlocks.SWEET_BERRIES_CAKE, MyBlocks.BASQUE_CAKE, MyBlocks.IRON_BAR_SKEWER);
 
-        for (Item item : new Item[]{MyItems.BUCKETED_SUNFLOWER_OIL, MyItems.BOTTLED_SUNFLOWER_OIL, MyItems.PAN_FRIED_BEEF_PATTY, MyItems.THICK_PORK_SLICE, MyItems.PAN_FRIED_PORK_SLICE, MyItems.THIN_PORK_SLICE, MyItems.GRILLED_PORK_SLICE, MyItems.SUGAR_PORK, MyItems.LEAVES_RICE, MyItems.VANILLA, MyItems.VANILLA_SWEET_ROLL, MyItems.STEAMED_BUNS, MyItems.COOKED_RICE, MyItems.VEGETABLE_BIG_STEW, MyItems.ROSE_MILK_TEA, MyItems.CORAL_COLORFULS, MyItems.POPPY_RUSSIAN_SOUP, MyItems.EGG_SHELL, MyItems.EGG_DOUGH, MyItems.CRUSHED_ICE, MyItems.WHEAT_BLACK_TEA, MyItems.ICED_MELON_JUICE, MyItems.THICK_HOT_COCOA, MyItems.SALT, MyItems.KELP_ASH, MyItems.JELLY_BEANS, MyItems.YEAST, MyItems.CAKE_BASE, MyItems.CAKE_BASE_SLICE, MyItems.SUNFLOWER_KERNELS, MyItems.BUCKETED_PUMPKIN_OIL, MyItems.JELLY_BEANS_CAKE, MyItems.SWEET_BERRIES_CAKE, MyItems.BASQUE_CAKE, MyItems.MASHED_POTATO, MyItems.CHOCOLATE_CAKE_BASE}) {
+        for (Item item : new Item[]{MyItems.BUCKETED_SUNFLOWER_OIL, MyItems.BOTTLED_SUNFLOWER_OIL, MyItems.PAN_FRIED_BEEF_PATTY, MyItems.THICK_PORK_SLICE, MyItems.PAN_FRIED_PORK_SLICE, MyItems.THIN_PORK_SLICE, MyItems.GRILLED_PORK_SLICE, MyItems.SUGAR_PORK, MyItems.LEAVES_RICE, MyItems.VANILLA, MyItems.VANILLA_SWEET_ROLL, MyItems.STEAMED_BUNS, MyItems.COOKED_RICE, MyItems.VEGETABLE_BIG_STEW, MyItems.ROSE_MILK_TEA, MyItems.CORAL_COLORFULS, MyItems.POPPY_RUSSIAN_SOUP, MyItems.EGG_SHELL, MyItems.EGG_DOUGH, MyItems.CRUSHED_ICE, MyItems.WHEAT_BLACK_TEA, MyItems.ICED_MELON_JUICE, MyItems.THICK_HOT_COCOA, MyItems.KELP_ASH, MyItems.JELLY_BEANS, MyItems.CAKE_BASE, MyItems.CAKE_BASE_SLICE, MyItems.SUNFLOWER_KERNELS, MyItems.BUCKETED_PUMPKIN_OIL, MyItems.JELLY_BEANS_CAKE, MyItems.SWEET_BERRIES_CAKE, MyItems.BASQUE_CAKE, MyItems.MASHED_POTATO, MyItems.CHOCOLATE_CAKE_BASE}) {
             generator.registerItemModel(item);
         }
     }
