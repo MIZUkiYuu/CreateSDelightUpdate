@@ -48,6 +48,6 @@ public class SweetBerriesCakeSBlock extends BigCakeBlock {
 
     @Override
     public void onFinalEat(World world, BlockPos blockPos, BlockState blockState) {
-        world.setBlockState(blockPos, MyBlocks.SWEET_BERRIES_CAKE_S.getDefaultState().with(AGE_3, 2));
+        world.removeBlock(blockPos, false);
     }
 }
